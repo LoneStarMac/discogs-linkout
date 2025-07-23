@@ -1,0 +1,29 @@
+{
+  "input_file": "collection_export.csv",
+  "output_formats": ["csv", "html"],
+  "artist_columns": ["Artist", "artist", "Artist Name", "artist_name", "Performer"],
+  "title_columns": ["Title", "title", "Album", "album", "Release Title", "release_title", "Track"],
+  "max_keywords": 5,
+  "search_engines": {
+    "wikipedia": "https://en.wikipedia.org/wiki/Special:Search?search={query}",
+    "spotify": "https://open.spotify.com/search/{query}",
+    "youtube": "https://www.youtube.com/results?search_query={query}",
+    "discogs": "https://www.discogs.com/search/?q={query}",
+    "allmusic": "https://www.allmusic.com/search/all/{query}",
+    "musicbrainz": "https://musicbrainz.org/search?query={query}&type=release",
+    "genius": "https://genius.com/search?q={query}",
+    "rateyourmusic": "https://rateyourmusic.com/search?searchterm={query}",
+    "google": "https://www.google.com/search?q={query}+album"
+  },
+  "default_search_engine": "wikipedia",
+  "html_items_per_page": 100,
+  "stopwords": [
+    "the", "a", "an", "of", "and", "is", "are", "was", "were", "at", "on", "in",
+    "to", "for", "with", "without", "how", "do", "does", "did", "i", "am", "be",
+    "by", "from", "that", "it's", "its", "you", "we", "this", "those", "these",
+    "as", "up", "out", "off", "will", "my", "your", "our", "not", "yes", "no",
+    "vol", "volume", "part", "feat", "featuring", "original", "soundtrack", "ost",
+    "single", "ep", "lp", "cd", "vinyl", "remaster", "remastered", "deluxe", "edition",
+    "bonus", "expanded", "special", "limited", "collector", "anniversary"
+  ]
+}
