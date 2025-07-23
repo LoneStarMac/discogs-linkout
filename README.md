@@ -18,8 +18,8 @@ An enhanced Python tool for processing music collection exports with keyword gen
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/yourusername/music-collection-processor.git
-cd music-collection-processor
+git clone https://github.com/lonestarmac/discogs-linkout.git
+cd discogs linkout
 ```
 
 2. Install dependencies:
