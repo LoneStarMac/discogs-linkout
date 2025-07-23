@@ -1,22 +1,22 @@
-# 🎵 Music Collection Processor
+# 🎵 Discogs-linkout: a music collection processor
 
 An enhanced Python tool for processing music collection exports with keyword generation, search link creation, and beautiful HTML report generation.
 
 ## ✨ Features
 
-- **Smart Column Detection**: Automatically detects artist and title columns from various export formats
-- **Keyword Generation**: Creates clean, search-friendly keywords from artist and album names
-- **Multiple Search Engines**: Generates clickable search links for Wikipedia, Spotify, YouTube, Discogs, AllMusic, and more
-- **Beautiful HTML Reports**: Creates paginated, responsive HTML pages with clickable search links
-- **Robust Error Handling**: Handles various CSV formats, encodings, and missing data gracefully
-- **Configurable**: Customizable via JSON configuration file
-- **Collection Agnostic**: Works with exports from Discogs, Last.fm, MusicBrainz, and custom formats
+- **Smart column detection**: Automatically detects artist and title columns from various export formats.
+- **Keyword generation**: Creates clean, search-friendly keywords from artist and album names.
+- **Multiple search engines**: Generates clickable search links for Wikipedia, Spotify, YouTube, Discogs, AllMusic, and more.
+- **Beautiful HTML reports**: Creates paginated, responsive HTML pages with clickable search links.
+- **Robust error handling**: Handles various CSV formats, encodings, and missing data gracefully.
+- **Configurable**: Customizable via JSON configuration file.
+- **Collection agnostic**: Works with exports from Discogs, Last.fm, MusicBrainz, and custom formats.
 
-## 🚀 Quick Start
+## 🚀 Quickstart
 
 ### Installation
 
-1. Clone this repository:
+1. Clone the repo:
 ```bash
 git clone https://github.com/yourusername/music-collection-processor.git
 cd music-collection-processor
@@ -51,6 +51,8 @@ The tool automatically detects columns from various music service exports:
 | Custom | (configurable) | (configurable) |
 
 ## 🔧 Command Line Options
+We can't write a python script without a big ol' fatty CLI, right?
+TODO: Make it 1980's termainal-fantastic...
 
 ```
 usage: collection_processor.py [-h] [-i INPUT] [-o OUTPUT] [--artist ARTIST] 
@@ -103,6 +105,8 @@ Current options:
 - **genius**: Genius lyrics search
 - **rateyourmusic**: Rate Your Music search
 - **google**: Google search with "album" modifier
+
+  TODO: Ask the user what they're trying to do, and then use API calls to pull the data into the CSV instead of making them do it all manually.
 
 ## ⚙️ Configuration
 
@@ -169,6 +173,8 @@ Beautiful, responsive web pages featuring:
 - **Mobile Responsive**: Works on all device sizes
 - **Search Integration**: Multiple search engine buttons per album
 
+TODO: Build yet another "Pretty Discogs Collection" HTML page people can share because [there's only 3,451 of them already](https://xkcd.com/927/)...
+
 ### Log File (`collection_processor.log`)
 Detailed processing log with:
 - Column detection results
@@ -176,12 +182,13 @@ Detailed processing log with:
 - Error messages and warnings
 - Performance metrics
 
-## 🎯 Use Cases
+## 🎶 Use Cases
 
 ### Music Discovery
 - Generate Wikipedia links to learn about albums in your collection
 - Quick access to Spotify for listening
 - YouTube links for music videos and reviews
+- 🏴‍☠️☠️?
 
 ### Collection Management
 - Clean keyword generation for cataloging
@@ -195,7 +202,7 @@ Detailed processing log with:
 
 ## 🛠️ Advanced Features
 
-### Automatic Column Detection
+### "Automatic" Column Detection
 The tool intelligently detects artist and title columns from common export formats:
 
 ```python
